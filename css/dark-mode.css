@@ -1,0 +1,164 @@
+/* 
+* Dark Mode Stylesheet for Abdoulaye Koumaré's Portfolio
+* Author: Abdoulaye Koumaré
+* Version: 1.0
+*/
+
+/* Dark Mode Variables */
+body.dark-mode {
+    /* Color Scheme for Dark Mode */
+    --primary-color: #3b82f6; /* Lighter Blue */
+    --secondary-color: #ff8800; /* Vibrant Orange */
+    --dark-color: #f8fafc; /* Light color for text */
+    --light-color: #0f172a; /* Dark background */
+    --gray-color: #cbd5e1; /* Light Gray for text */
+    --border-color: #1e293b; /* Dark Gray for borders */
+    --success-color: #10b981; /* Green */
+    --error-color: #ef4444; /* Red */
+
+    /* Background and Text Colors */
+    background-color: var(--light-color);
+    color: var(--dark-color);
+}
+
+/* Header & Navigation */
+body.dark-mode #header {
+    background-color: rgba(15, 23, 42, 0.95); /* Dark background with opacity */
+    border-bottom: 1px solid var(--border-color);
+}
+
+body.dark-mode .logo a {
+    color: var(--primary-color);
+}
+
+body.dark-mode .nav-links {
+    background-color: var(--light-color); /* Dark background for mobile menu */
+    border: 1px solid var(--border-color);
+}
+
+body.dark-mode .nav-links ul li a {
+    color: var(--dark-color);
+}
+
+body.dark-mode .nav-links ul li {
+    border-bottom: 1px solid var(--border-color);
+}
+
+body.dark-mode .nav-links ul li a::before {
+    color: var(--primary-color);
+}
+
+body.dark-mode .nav-options button:not(:last-child)::after {
+    background-color: var(--border-color);
+}
+
+body.dark-mode .nav-options button {
+    color: var(--dark-color);
+}
+
+body.dark-mode .mobile-menu-btn {
+    color: var(--dark-color);
+}
+
+/* Headings */
+body.dark-mode h1, 
+body.dark-mode h2, 
+body.dark-mode h3, 
+body.dark-mode h4, 
+body.dark-mode h5, 
+body.dark-mode h6 {
+    color: var(--dark-color);
+}
+
+/* Sections */
+body.dark-mode .bg-light {
+    background-color: #1e293b; /* Darker shade for sections with light background */
+}
+
+/* Cards and Containers */
+body.dark-mode .skills-category,
+body.dark-mode .certification-item,
+body.dark-mode .timeline-content,
+body.dark-mode .company-item,
+body.dark-mode .project-item,
+body.dark-mode .contact-info,
+body.dark-mode .contact-form,
+body.dark-mode .personal-info {
+    background-color: #1e293b; /* Dark background for cards */
+    border: 1px solid var(--border-color);
+}
+
+/* Timeline */
+body.dark-mode .timeline-dot {
+    background-color: var(--light-color);
+    border-color: var(--primary-color);
+}
+
+/* Progress Bars */
+body.dark-mode .progress-bar {
+    background-color: #334155; /* Darker background for progress bars */
+}
+
+/* Project Tech Tags */
+body.dark-mode .project-tech span,
+body.dark-mode .certification-date {
+    background-color: #334155;
+    color: var(--gray-color);
+}
+
+/* Form Elements */
+body.dark-mode .form-group input,
+body.dark-mode .form-group textarea {
+    background-color: #0f172a;
+    border-color: #334155;
+    color: var(--dark-color);
+}
+
+body.dark-mode .form-group input:focus,
+body.dark-mode .form-group textarea:focus {
+    border-color: var(--primary-color);
+    outline: 1px solid var(--primary-color);
+}
+
+/* Footer */
+body.dark-mode #footer {
+    background-color: #0f172a; /* Darker background for footer */
+}
+
+/* Dark Mode Toggle Button */
+body.dark-mode #dark-mode-toggle i.fa-moon {
+    display: none;
+}
+
+body.dark-mode #dark-mode-toggle i.fa-sun {
+    display: inline-block;
+}
+
+#dark-mode-toggle i.fa-sun {
+    display: none;
+}
+
+/* Images with Borders */
+body.dark-mode .hero-image img {
+    border-color: #1e293b;
+}
+
+/* Filter Buttons */
+body.dark-mode .filter-btn {
+    color: var(--gray-color);
+}
+
+body.dark-mode .filter-btn.active,
+body.dark-mode .filter-btn:hover {
+    background-color: var(--primary-color);
+    color: var(--light-color);
+}
+
+/* Back to Top Button */
+body.dark-mode .back-to-top {
+    background-color: var(--primary-color);
+}
+
+body.dark-mode .back-to-top:hover {
+    background-color: var(--secondary-color);
+}
