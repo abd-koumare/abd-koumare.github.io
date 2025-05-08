@@ -950,6 +950,7 @@ img {
         flex: 0 0 100%;
     }
 
+
     .hero-image {
         margin-bottom: 30px;
     }
@@ -1165,4 +1166,11 @@ img {
     .projects-grid {
         grid-template-columns: 1fr;
     }
+
+
+    .contact-info, .contact-form {
+        width: 100% ;
+    }
 }
+
+
