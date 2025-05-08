@@ -17,8 +17,8 @@
     --error-color: #ef4444; /* Red for error messages */
 
     /* Typography */
-    --heading-font: 'Inter', 'Raleway', sans-serif;
-    --body-font: 'Roboto', 'Ubuntu', sans-serif;
+    --heading-font: 'Raleway', sans-serif;
+    --body-font: 'Raleway', 'Roboto', 'Ubuntu', sans-serif;
 
     /* Spacing */
     --section-padding: 80px 0;
@@ -101,6 +101,11 @@ ul {
 
 img {
     max-width: 100%;
+    height: auto;
+}
+
+.logo {
+    width: 50px;
     height: auto;
 }
 
@@ -459,7 +464,7 @@ img {
 
 .certification-item {
     display: flex;
-    align-items: center;
+    align-items: start;
     background-color: white;
     padding: 25px;
     border-radius: var(--border-radius);
@@ -509,6 +514,20 @@ img {
 
 .certification-link:hover {
     color: var(--secondary-color);
+}
+
+.certification-disclaimer {
+    margin-top: 30px;
+    text-align: center;
+    padding: 15px;
+    border-top: 1px solid var(--border-color);
+}
+
+.certification-disclaimer p {
+    font-size: 0.85rem;
+    color: var(--gray-color);
+    margin-bottom: 0;
+    font-style: italic;
 }
 
 /* ===== Experience Section ===== */
