@@ -126,43 +126,10 @@ document.addEventListener('DOMContentLoaded', function() {
     
     if (contactForm) {
         contactForm.addEventListener('submit', function(e) {
-            // You can add form validation here if needed
-            
+
             // For now, we'll just log a message
             console.log('Form submitted');
-            
-            // If using Formspree, the form will be submitted normally
-            // If implementing custom form handling, you would prevent default and use fetch or XMLHttpRequest
-            // e.preventDefault();
-            
-            // Example of custom form handling:
-            /*
-            e.preventDefault();
-            
-            const formData = new FormData(this);
-            
-            fetch(this.action, {
-                method: 'POST',
-                body: formData,
-                headers: {
-                    'Accept': 'application/json'
-                }
-            })
-            .then(response => {
-                if (response.ok) {
-                    // Show success message
-                    alert('Message sent successfully!');
-                    this.reset();
-                } else {
-                    // Show error message
-                    alert('There was an error sending your message. Please try again.');
-                }
-            })
-            .catch(error => {
-                console.error('Error:', error);
-                alert('There was an error sending your message. Please try again.');
-            });
-            */
+
         });
     }
 
